@@ -1,0 +1,51 @@
+.HIDE {
+	display: none !important;
+}
+
+header.jumbotron{
+	background: rgba(0, 116, 20, .8);
+	position: relative;
+	background-image: url('../img/bg.png');
+	background-size: cover;
+	padding-top: 10rem;
+}
+	header.jumbotron .bgImage {
+		display: block;
+		height: 100%;
+		width: 100%;
+		background-image: url(img/article-05.png) no-repeat contain;
+	}
+	header.jumbotron h2 {
+	    font-size: 1.35rem;
+	}
+	header.jumbotron .display-3 {
+	    font-size: 3rem;
+	    font-weight: 500;
+	}
+
+
+
+	.icon-logo{
+
+	}
+
+
+	textarea{
+		min-height: 148px;
+	}
+
+
+	.btn-primary {
+	    color: #fff;
+	    background-color: #427250;
+	    border-color: #31593e;
+	}
+
+
+
+	.navbar-brand>img {
+	    display: block;
+	    position: absolute;
+	    top: 30px;
+	    width: 110px;
+	}
