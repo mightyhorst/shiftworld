@@ -488,9 +488,9 @@
 					</div>
 					<div class="col-md-6 col-xl-6">
 						<div class="form-group has-icon-left form-control-email">
-							<label class="sr-only" for="inputEmail">Message </label>
+							<label class="sr-only" for="txtMessage">Message </label>
 							
-							<textarea type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Write your message here..." autocomplete="off"></textarea>
+							<textarea class="form-control form-control-lg" id="txtMessage" placeholder="Write your message here..." autocomplete="off"></textarea>
 						</div>
 					</div>
 					<!-- <div class="col-md-6 col-xl-3">
@@ -501,7 +501,25 @@
 					</div> -->
 					<div class="col-md-6 col-xl-3">
 						<div class="form-group">
-							<button type="submit" class="btn btn-primary btn-block"> Contact Us </button>
+							<!-- <button type="submit" class="btn btn-primary btn-block"> Contact Us </button> -->
+							<a id="btnContactUs" href="mailto:sarah@sarahlaurielifestyles.com?subject=Hello%20world&amp;body=" class="btn btn-primary btn-block">Contact Us
+							</a>
+
+							<script>
+								$(document).ready(function() {
+
+									var txtMessage = $('#txtMessage');
+
+									txtMessage.on('keyup', function(e) {
+
+										btnContactUs = 'mailto:sarah@sarahlaurielifestyles.com?subject=Hello%20world&amp;body=';
+										btnContactUs += txtMessage.val();
+
+									})
+
+								})
+							</script>
+
 						</div>
 					</div>
 				</div>
