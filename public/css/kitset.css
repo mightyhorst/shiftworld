@@ -10,7 +10,8 @@ header.jumbotron{
 	background-image: url('../img/bg2.jpg');
 	background-size: cover;
 	padding-top: 10rem;
-	background-position-y: -62px;
+	background-repeat: no-repeat;
+	/*background-position-y: -62px;*/
 }
 	header.jumbotron .bgImage {
 		display: block;
