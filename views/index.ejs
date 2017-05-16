@@ -508,12 +508,15 @@
 							<script>
 								$(document).ready(function() {
 
-									var txtMessage = $('#txtMessage');
+									var txtMessage = $('#txtMessage'),
+										btnContactUs = $('#btnContactUs'),
+										msg = 'mailto:sarah@sarahlaurielifestyles.com?subject=Hello%20world&amp;body=';
+
 
 									txtMessage.on('keyup', function(e) {
-
-										btnContactUs = 'mailto:sarah@sarahlaurielifestyles.com?subject=Hello%20world&amp;body=';
-										btnContactUs += txtMessage.val();
+										
+										msg += txtMessage.val();
+										btnContactUs.attr('href', msg);
 
 									})
 
