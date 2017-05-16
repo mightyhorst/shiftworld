@@ -518,7 +518,7 @@
 
 									txtMessage.on('keyup', function(e) {
 
-										msg += txtMessage.val();
+										msg += encodeURIComponent(txtMessage.val() );
 										btnContactUs.attr('href', msg);
 
 									})
