@@ -5,9 +5,10 @@
 header.jumbotron{
 	background: rgba(0, 116, 20, .8);
 	position: relative;
-	background-image: url('../img/bg.png');
+	background-image: url('../img/bg2.png');
 	background-size: cover;
 	padding-top: 10rem;
+	background-position-y: -62px;
 }
 	header.jumbotron .bgImage {
 		display: block;
