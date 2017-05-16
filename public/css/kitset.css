@@ -6,7 +6,8 @@ header.jumbotron{
 	background: rgba(0, 116, 20, .8);
 	background: #4a7e5a;
 	position: relative;
-	background-image: url('../img/bg2.png');
+	/*background-image: url('../img/bg2.png');*/
+	background-image: url('../img/bg2.jpg');
 	background-size: cover;
 	padding-top: 10rem;
 	background-position-y: -62px;
