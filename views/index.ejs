@@ -505,7 +505,11 @@
 					<div class="col-md-6 col-xl-3">
 						<div class="form-group">
 							<!-- <button type="submit" class="btn btn-primary btn-block"> Contact Us </button> -->
-							<a id="btnContactUs" href="mailto:sarah@sarahlaurielifestyles.com?subject=Hello%20world&amp;body=" class="btn btn-primary btn-block">Contact Us
+
+							
+							<!-- <a id="btnContactUs" href="mailto:sarah@sarahlaurielifestyles.com?subject=Hello%20world&amp;body=" class="btn btn-primary btn-block">Contact Us
+							</a> -->
+							<a id="btnContactUs" href="#" class="btn btn-primary btn-block">Contact Us
 							</a>
 
 							<script>
@@ -516,8 +520,8 @@
 										msg = ''; //'mailto:sarah@sarahlaurielifestyles.com?subject=Hello%20world&amp;body=';
 
 
-									btnContactUs.on('click', function(e) {
-
+									$('#btnContactUs').click(function(e) {
+										console.log('Sending email...')
 										e.preventDefault();
 
 										msg = 'mailto:sarah@sarahlaurielifestyles.com?subject=Hello%20world&amp;body=Hi%20Sarah%2C%20%0A';
