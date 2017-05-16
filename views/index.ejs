@@ -518,6 +518,7 @@
 
 									btnContactUs.on('click', function(e) {
 
+										msg = 'mailto:sarah@sarahlaurielifestyles.com?subject=Hello%20world&amp;body=';
 										msg += encodeURIComponent(txtMessage.val() );
 										btnContactUs.attr('href', msg);
 
