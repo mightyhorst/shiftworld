@@ -518,7 +518,7 @@
 
 									btnContactUs.on('click', function(e) {
 
-										msg = 'mailto:sarah@sarahlaurielifestyles.com?subject=Hello%20world;body=Hi%20Sarah';
+										msg = 'mailto:sarah@sarahlaurielifestyles.com?subject=Hello%20world&amp;body=Hi%20Sarah%2C%0A';
 										msg += encodeURIComponent(txtMessage.val() );
 										btnContactUs.attr('href', msg);
 
